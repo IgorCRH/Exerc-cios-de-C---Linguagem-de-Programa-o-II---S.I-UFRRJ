@@ -1,0 +1,6 @@
+Nome do Aluno: Fernando
+ - Idade: 22 - Matricula: 1 - Curso: 2352968 - Faltas: 2 - CR: 6.500000
+Nome do Aluno: Luisa
+ - Idade: 23 - Matricula: 2 - Curso: 2353120 - Faltas: 5 - CR: 7.000000
+Nome do Aluno: Mateus
+ - Idade: 25 - Matricula: 3 - Curso: 2353272 - Faltas: 40 - CR: 5.000000

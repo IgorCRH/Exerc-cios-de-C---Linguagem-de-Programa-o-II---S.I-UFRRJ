@@ -1,0 +1,12 @@
+Disciplina: Geografia
+ Código: 1
+Disciplina: Matematica
+ Código: 2
+Disciplina: Portugues
+ Código: 3
+Disciplina: Ingles
+ Código: 4
+Disciplina: Historia
+ Código: 5
+Disciplina: Fisica
+ Código: 6
