@@ -1,0 +1,39 @@
+
+Nome: Sandra
+
+Idade: 30
+
+Matricula: 1
+CR: 6.5000
+Curso: Geografia
+
+Faltas: 30
+Nota P1: 7.500000
+Nota P2: 4.000000
+Nota P1: 8.000000
+
+Nome: Valeria
+
+Idade: 27
+
+Matricula: 2
+CR: 8.0000
+Curso: Matematica
+
+Faltas: 20
+Nota P1: 8.000000
+Nota P2: 8.000000
+Nota P1: 8.000000
+
+Nome: Gean
+
+Idade: 22
+
+Matricula: 3
+CR: 10.0000
+Curso: Fisica
+
+Faltas: 9
+Nota P1: 10.000000
+Nota P2: 10.000000
+Nota P1: 10.000000

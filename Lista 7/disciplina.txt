@@ -1,0 +1,6 @@
+Disciplina: SistemasDigitais
+ Código: 1
+Disciplina: Calculo1
+ Código: 2
+Disciplina: BelasArtes
+ Código: 3

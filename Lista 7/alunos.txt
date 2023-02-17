@@ -1,0 +1,27 @@
+
+Nome: Sandra
+
+Idade: 30
+
+Matricula: 1
+CR: 6.5000
+Curso: Geografia
+
+
+Nome: Valeria
+
+Idade: 27
+
+Matricula: 2
+CR: 8.0000
+Curso: Matematica
+
+
+Nome: Gean
+
+Idade: 22
+
+Matricula: 3
+CR: 10.0000
+Curso: Fisica
+
