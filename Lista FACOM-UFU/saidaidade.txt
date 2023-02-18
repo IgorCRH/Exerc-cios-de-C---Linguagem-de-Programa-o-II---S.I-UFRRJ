@@ -1,0 +1,12 @@
+Nome: Luis
+
+ - Idade: Maior de 18
+Nome: Alex
+
+ - Idade: Menor de 18
+Nome: Marcela
+
+ - Idade: Entrando na maioridade
+Nome: Victor
+
+ - Idade: Maior de 18
