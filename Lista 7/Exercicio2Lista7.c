@@ -84,7 +84,7 @@ contvagas++;
 break;
 }
 if (contvagas == 40){
-printf("N„o h· mais vagas nesta disciplina.");
+printf("N√£o h√° mais vagas nesta disciplina.");
 }
 }
 }
@@ -94,7 +94,6 @@ fclose(disc3);
 
 void listaralunos (disciplina *aux1, FILE *disc2){
 int i = 0, aux = 0;
-char auxiliar;
 aluno imprimir;
 
 disc2 = fopen("alunos.dat", "rb");
@@ -125,7 +124,6 @@ void imprimirboletim (disciplina *aux1, FILE *disc3){
 int i = 0, aux= 0, aux2=0;
 aluno imprimir;
 alunosmat imprimir2;
-char auxiliar2, auxiliar3;
 
 disc3 = fopen("boletins.dat", "rb");
 
