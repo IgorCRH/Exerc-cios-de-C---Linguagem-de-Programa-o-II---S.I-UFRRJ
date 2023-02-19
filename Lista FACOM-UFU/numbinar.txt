@@ -1,0 +1,10 @@
+O numero 1 em binario eh:                                1
+O numero 2 em binario eh:                               10
+O numero 3 em binario eh:                               11
+O numero 4 em binario eh:                              100
+O numero 5 em binario eh:                              101
+O numero 6 em binario eh:                              110
+O numero 7 em binario eh:                              111
+O numero 8 em binario eh:                             1000
+O numero 9 em binario eh:                             1001
+O numero 10 em binario eh:                             1010
