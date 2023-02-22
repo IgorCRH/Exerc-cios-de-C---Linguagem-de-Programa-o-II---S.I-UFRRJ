@@ -3,13 +3,13 @@
 #include<ctype.h>
 #define MAX 100
 
-// FaÁa um programa para gerenciar uma agenda de contatos. Para cada contato armazene o nome, o telefone e o aniversario (dia e mÍs). O programa deve permitir:
+// Fa√ßa um programa para gerenciar uma agenda de contatos. Para cada contato armazene o nome, o telefone e o aniversario (dia e m√™s). O programa deve permitir:
 // (a) inserir contato
 // (b) remover contato
 // (c) pesquisar um contato pelo nome
 // (d) listar todos os contatos
 // (e) listar os contatos cujo nome inicia com uma dada letra
-// (f) imprimir os aniversariantes do mÍs.
+// (f) imprimir os aniversariantes do m√™s.
 // Sempre que o programa for encerrado, os contatos devem ser armazenados em um arquivo binario. Quando o programa iniciar, os contatos devem ser inicializados com os
 // dados contidos neste arquivo binario.
 
@@ -113,7 +113,7 @@ fprintf(entradatemp,"\nAniversario: %d/%d/%d",aux1->contatos[i].dataniver.dia,au
 fprintf(entradatemp,"\nTelefone: %d - %d",aux1->contatos[i].numtel.ddd,aux1->contatos[i].numtel.tel);
 }
 }
-printf("Contato n„o encontrado.\n");
+printf("Contato n√£o encontrado.\n");
 fclose(entradatemp);
 fclose(entrada);
 }
