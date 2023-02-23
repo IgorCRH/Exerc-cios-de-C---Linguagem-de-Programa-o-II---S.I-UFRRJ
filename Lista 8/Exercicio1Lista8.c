@@ -63,12 +63,10 @@ printf("\nO arquivo tem de ser criado!");
 printf("Digite a letra que quer buscar no vetor:");
 scanf("%c",&let);
 for (i = 0; i < 10; i++){
-fseek(prova,sizeof(desenho2), SEEK_SET);
-fread(&desenho2,sizeof(desenho2->rotulo[i]),1,prova);
 if (desenho2->rotulo[i] == let){
 desenho2->rotulo[i] = '#';
 }
-fprintf(prova, "Nº %d - Ponto %c - x = %d | y = %d | z = %d\n", i, desenho2->rotulo[i], desenho2->ponto[i].x,desenho2->ponto[i].y,desenho2->ponto[i].z);
+fprintf(prova, "NÂº %d - Ponto %c - x = %d | y = %d | z = %d\n", i, desenho2->rotulo[i], desenho2->ponto[i].x,desenho2->ponto[i].y,desenho2->ponto[i].z);
 }
 }
 fclose(prova);
