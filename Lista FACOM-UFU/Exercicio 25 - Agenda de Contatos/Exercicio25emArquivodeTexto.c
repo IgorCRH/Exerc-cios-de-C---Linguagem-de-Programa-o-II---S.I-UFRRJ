@@ -3,15 +3,16 @@
 #include<ctype.h>
 #define MAX 100
 
-// Fa�a um programa para gerenciar uma agenda de contatos. Para cada contato armazene o nome, o telefone e o aniversario (dia e m�s). O programa deve permitir:
+// Exercicio 25 da Lista, só que feito em formato para arquivo de texto.
+// Faça um programa para gerenciar uma agenda de contatos. Para cada contato armazene o nome, o telefone e o aniversario (dia e mês). O programa deve permitir:
 // (a) inserir contato
 // (b) remover contato
 // (c) pesquisar um contato pelo nome
 // (d) listar todos os contatos
 // (e) listar os contatos cujo nome inicia com uma dada letra
-// (f) imprimir os aniversariantes do m�s.
-// Sempre que o programa for encerrado, os contatos devem ser armazenados em um arquivo binario. Quando o programa iniciar, os contatos devem ser inicializados com os
-// dados contidos neste arquivo binario.
+// (f) imprimir os aniversariantes do mês.
+// Sempre que o programa for encerrado, os contatos devem ser armazenados em um arquivo de texto. Quando o programa iniciar, os contatos devem ser inicializados com os
+// dados contidos neste arquivo texto.
 
 typedef struct {
 int dia;
@@ -64,7 +65,7 @@ fflush(stdin);
     printf("Digite o telefone do contato: ");
     scanf("%d", &contatos.numtel.tel);
 
-    fprintf(entrada, "\nNome: %s \nAnivers�rio: %d %d %d \nTelefone: %d - %d", contatos.nome, contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano, contatos.numtel.ddd, contatos.numtel.tel);
+    fprintf(entrada, "\nNome: %s \nAniversário: %d %d %d \nTelefone: %d - %d", contatos.nome, contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano, contatos.numtel.ddd, contatos.numtel.tel);
 printf("Digite 1 para encerrar ou qualquer outra tecla para continuar.");
 scanf("%d",&opc);
 if (opc == 1){
@@ -87,9 +88,9 @@ entradatemp = fopen("contatostemp.txt", "w");
 printf("Digite o nome do contato que deseja remover: ");
 scanf("%s", nome);
 for(i = 0; i < MAX; i++){
-while (fscanf(entrada, "\nNome: %s \nAnivers�rio: %d %d %d \nTelefone: %d - %d", contatos.nome, &contatos.dataniver.dia, &contatos.dataniver.mes, &contatos.dataniver.ano, &contatos.numtel.ddd, &contatos.numtel.tel) != EOF) {
+while (fscanf(entrada, "\nNome: %s \nAniversário: %d %d %d \nTelefone: %d - %d", contatos.nome, &contatos.dataniver.dia, &contatos.dataniver.mes, &contatos.dataniver.ano, &contatos.numtel.ddd, &contatos.numtel.tel) != EOF) {
         if (strcmp(contatos.nome, nome) != 0) {
-            fprintf(entradatemp,"\nNome: %s \nAnivers�rio: %d %d %d \nTelefone: %d - %d",contatos.nome,contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano,contatos.numtel.ddd, contatos.numtel.tel);
+            fprintf(entradatemp,"\nNome: %s \nAniversário: %d %d %d \nTelefone: %d - %d",contatos.nome,contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano,contatos.numtel.ddd, contatos.numtel.tel);
         } else {
             encontrado = 1;
         }
@@ -118,9 +119,9 @@ entrada = fopen ("contatos.txt","r");
 printf("Digite o nome do contato que deseja pesquisar: ");
 scanf("%s", nome);
 
-while (fscanf(entrada, "\nNome: %s \nAnivers�rio: %d %d %d \nTelefone: %d - %d", contatos.nome, &contatos.dataniver.dia, &contatos.dataniver.mes, &contatos.dataniver.ano, &contatos.numtel.ddd, &contatos.numtel.tel) != EOF) {
+while (fscanf(entrada, "\nNome: %s \nAniversário: %d %d %d \nTelefone: %d - %d", contatos.nome, &contatos.dataniver.dia, &contatos.dataniver.mes, &contatos.dataniver.ano, &contatos.numtel.ddd, &contatos.numtel.tel) != EOF) {
         if (strcmp(contatos.nome, nome) == 0) {
-            printf("\nNome: %s \nAnivers�rio: %d %d %d \nTelefone: %d - %d", contatos.nome, contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano, contatos.numtel.ddd, contatos.numtel.tel);
+            printf("\nNome: %s \nAniversário: %d %d %d \nTelefone: %d - %d", contatos.nome, contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano, contatos.numtel.ddd, contatos.numtel.tel);
             break;
             encontrado = 1;
         }
@@ -161,9 +162,9 @@ fflush(stdin);
 printf("Digite a inicial, em maisculo, que deseja procurar pelos nomes: ");
 scanf("%c", &inic);
 
-while (fscanf(entrada, "\nNome: %s \nAnivers�rio: %d %d %d \nTelefone: %d - %d", contatos.nome, &contatos.dataniver.dia, &contatos.dataniver.mes, &contatos.dataniver.ano, &contatos.numtel.ddd, &contatos.numtel.tel) != EOF) {
+while (fscanf(entrada, "\nNome: %s \nAniversário: %d %d %d \nTelefone: %d - %d", contatos.nome, &contatos.dataniver.dia, &contatos.dataniver.mes, &contatos.dataniver.ano, &contatos.numtel.ddd, &contatos.numtel.tel) != EOF) {
         if (contatos.nome[0] == inic) {
-            printf("\nNome: %s \nAnivers�rio: %d %d %d \nTelefone: %d - %d", contatos.nome, contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano, contatos.numtel.ddd, contatos.numtel.tel);
+            printf("\nNome: %s \nAniversário: %d %d %d \nTelefone: %d - %d", contatos.nome, contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano, contatos.numtel.ddd, contatos.numtel.tel);
             break;
             encontrado = 1;
         }
@@ -185,9 +186,9 @@ entrada = fopen ("contatos.txt","r");
 printf("Digite o mes que gostaria de saber quem faz aniversario: ");
 scanf("%d",&mes);
 
-while (fscanf(entrada, "\nNome: %s \nAnivers�rio: %d %d %d \nTelefone: %d - %d", contatos.nome, &contatos.dataniver.dia, &contatos.dataniver.mes, &contatos.dataniver.ano, &contatos.numtel.ddd, &contatos.numtel.tel) != EOF) {
+while (fscanf(entrada, "\nNome: %s \nAniversário: %d %d %d \nTelefone: %d - %d", contatos.nome, &contatos.dataniver.dia, &contatos.dataniver.mes, &contatos.dataniver.ano, &contatos.numtel.ddd, &contatos.numtel.tel) != EOF) {
         if (contatos.dataniver.mes == mes) {
-            printf("\nNome: %s \nAnivers�rio: %d %d %d \nTelefone: %d - %d", contatos.nome, contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano, contatos.numtel.ddd, contatos.numtel.tel);
+            printf("\nNome: %s \nAniversário: %d %d %d \nTelefone: %d - %d", contatos.nome, contatos.dataniver.dia, contatos.dataniver.mes, contatos.dataniver.ano, contatos.numtel.ddd, contatos.numtel.tel);
             break;
             encontrado = 1;
         }
